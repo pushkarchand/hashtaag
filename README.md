@@ -4,11 +4,11 @@
 - Post :: /state    
 
 # Get states 
-- Get /state?q=Kera
+- Get :: /state?q=Kera
 
 # Get town details
-- Get /town?q=Phule
+- Get :: /town?q=Phule
 
 # Get District details 
-- Get /district?q=Jaip
+- Get :: /district?q=Jaip
 
