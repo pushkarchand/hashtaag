@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const http = require('http');
+const config=require('./config/development');
 
 
 // Unhandled Rejections and Exceptions process wide
@@ -36,6 +37,6 @@ require('./routes')(app);
 const server = http.createServer(app);
 
 // Starting the server
-server.listen(3000, () => {
-	console.log('Node server listening on port ' + 3000);
+server.listen(config.port, () => {
+	console.log('Node server listening on port ' + config.port);
 });
